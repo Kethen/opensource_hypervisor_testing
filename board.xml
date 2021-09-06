@@ -1,0 +1,898 @@
+<acrn-config board="b150">
+  <BIOS_INFO>
+	BIOS Information
+	Vendor: American Megatrends Inc.
+	Version: 3016
+	Release Date: 12/27/2016
+	BIOS Revision: 5.12
+	</BIOS_INFO>
+  <BASE_BOARD_INFO>
+	Base Board Information
+	Manufacturer: ASUSTeK COMPUTER INC.
+	Product Name: B150M-A/M.2
+	Version: Rev X.0x
+	</BASE_BOARD_INFO>
+  <PCI_DEVICE>
+	00:00.0 Host bridge: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers (rev 07)
+	00:01.0 PCI bridge: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16) (rev 07)
+	00:02.0 VGA compatible controller: Intel Corporation HD Graphics 530 (rev 06)
+	Region 0: Memory at 2ffe000000 (64-bit, non-prefetchable) [size=16M]
+	Region 2: Memory at 2fd0000000 (64-bit, prefetchable) [size=256M]
+	00:14.0 USB controller: Intel Corporation 100 Series/C230 Series Chipset Family USB 3.0 xHCI Controller (rev 31)
+	Region 0: Memory at 2fff010000 (64-bit, non-prefetchable) [size=64K]
+	00:16.0 Communication controller: Intel Corporation 100 Series/C230 Series Chipset Family MEI Controller #1 (rev 31)
+	Region 0: Memory at 2fff025000 (64-bit, non-prefetchable) [size=4K]
+	00:17.0 SATA controller: Intel Corporation Q170/Q150/B150/H170/H110/Z170/CM236 Chipset SATA Controller [AHCI Mode] (rev 31)
+	Region 0: Memory at f7304000 (32-bit, non-prefetchable) [size=8K]
+	Region 1: Memory at f7307000 (32-bit, non-prefetchable) [size=256]
+	Region 5: Memory at f7306000 (32-bit, non-prefetchable) [size=2K]
+	00:1c.0 PCI bridge: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #5 (rev f1)
+	00:1d.0 PCI bridge: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #9 (rev f1)
+	00:1f.0 ISA bridge: Intel Corporation B150 Chipset LPC/eSPI Controller (rev 31)
+	00:1f.2 Memory controller: Intel Corporation 100 Series/C230 Series Chipset Family Power Management Controller (rev 31)
+	Region 0: Memory at f7300000 (32-bit, non-prefetchable) [disabled] [size=16K]
+	00:1f.3 Audio device: Intel Corporation 100 Series/C230 Series Chipset Family HD Audio Controller (rev 31)
+	Region 0: Memory at 2fff020000 (64-bit, non-prefetchable) [size=16K]
+	Region 4: Memory at 2fff000000 (64-bit, non-prefetchable) [size=64K]
+	00:1f.4 SMBus: Intel Corporation 100 Series/C230 Series Chipset Family SMBus (rev 31)
+	Region 0: Memory at 2fff024000 (64-bit, non-prefetchable) [size=256]
+	01:00.0 VGA compatible controller: NVIDIA Corporation GP107 [GeForce GTX 1050] (rev a1)
+	Region 0: Memory at f6000000 (32-bit, non-prefetchable) [size=16M]
+	Region 1: Memory at 2fe0000000 (64-bit, prefetchable) [size=256M]
+	Region 3: Memory at 2ff0000000 (64-bit, prefetchable) [size=32M]
+	01:00.1 Audio device: NVIDIA Corporation GP107GL High Definition Audio Controller (rev a1)
+	Region 0: Memory at f7080000 (32-bit, non-prefetchable) [size=16K]
+	02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+	Region 2: Memory at f7204000 (64-bit, non-prefetchable) [size=4K]
+	Region 4: Memory at f7200000 (64-bit, non-prefetchable) [size=16K]
+	03:00.0 Non-Volatile memory controller: SK hynix Device 1327
+	Region 0: Memory at f7100000 (64-bit, non-prefetchable) [size=16K]
+	</PCI_DEVICE>
+  <PCI_VID_PID>
+	00:00.0 0600: 8086:191f (rev 07)
+	00:01.0 0604: 8086:1901 (rev 07)
+	00:02.0 0300: 8086:1912 (rev 06)
+	00:14.0 0c03: 8086:a12f (rev 31)
+	00:16.0 0780: 8086:a13a (rev 31)
+	00:17.0 0106: 8086:a102 (rev 31)
+	00:1c.0 0604: 8086:a114 (rev f1)
+	00:1d.0 0604: 8086:a118 (rev f1)
+	00:1f.0 0601: 8086:a148 (rev 31)
+	00:1f.2 0580: 8086:a121 (rev 31)
+	00:1f.3 0403: 8086:a170 (rev 31)
+	00:1f.4 0c05: 8086:a123 (rev 31)
+	01:00.0 0300: 10de:1c81 (rev a1)
+	01:00.1 0403: 10de:0fb9 (rev a1)
+	02:00.0 0200: 10ec:8168 (rev 15)
+	03:00.0 0108: 1c5c:1327
+	</PCI_VID_PID>
+  <WAKE_VECTOR_INFO>
+	#define WAKE_VECTOR_32          0xB2D05C4CUL
+	#define WAKE_VECTOR_64          0xB2D05C58UL
+	</WAKE_VECTOR_INFO>
+  <RESET_REGISTER_INFO>
+	#define RESET_REGISTER_ADDRESS  0xCF9UL
+	#define RESET_REGISTER_SPACE_ID SPACE_SYSTEM_IO
+	#define RESET_REGISTER_VALUE    0x6U
+	</RESET_REGISTER_INFO>
+  <PM_INFO>
+	#define PM1A_EVT_SPACE_ID       SPACE_SYSTEM_IO
+	#define PM1A_EVT_BIT_WIDTH      0x20U
+	#define PM1A_EVT_BIT_OFFSET     0x0U
+	#define PM1A_EVT_ADDRESS        0x1800UL
+	#define PM1A_EVT_ACCESS_SIZE    0x2U
+	#define PM1B_EVT_SPACE_ID       SPACE_SYSTEM_IO
+	#define PM1B_EVT_BIT_WIDTH      0x0U
+	#define PM1B_EVT_BIT_OFFSET     0x0U
+	#define PM1B_EVT_ADDRESS        0x0UL
+	#define PM1B_EVT_ACCESS_SIZE    0x2U
+	#define PM1A_CNT_SPACE_ID       SPACE_SYSTEM_IO
+	#define PM1A_CNT_BIT_WIDTH      0x10U
+	#define PM1A_CNT_BIT_OFFSET     0x0U
+	#define PM1A_CNT_ADDRESS        0x1804UL
+	#define PM1A_CNT_ACCESS_SIZE    0x2U
+	#define PM1B_CNT_SPACE_ID       SPACE_SYSTEM_IO
+	#define PM1B_CNT_BIT_WIDTH      0x0U
+	#define PM1B_CNT_BIT_OFFSET     0x0U
+	#define PM1B_CNT_ADDRESS        0x0UL
+	#define PM1B_CNT_ACCESS_SIZE    0x2U
+	</PM_INFO>
+  <S3_INFO>
+	#define S3_PKG_VAL_PM1A         0x5U
+	#define S3_PKG_VAL_PM1B         0U
+	#define S3_PKG_RESERVED         0x0U
+	</S3_INFO>
+  <S5_INFO>
+	#define S5_PKG_VAL_PM1A         0x7U
+	#define S5_PKG_VAL_PM1B         0U
+	#define S5_PKG_RESERVED         0x0U
+	</S5_INFO>
+  <DRHD_INFO>
+	#define DRHD_COUNT              2U
+
+	#define DRHD0_DEV_CNT           0x1U
+	#define DRHD0_SEGMENT           0x0U
+	#define DRHD0_FLAGS             0x0U
+	#define DRHD0_REG_BASE          0xFED90000UL
+	#define DRHD0_IGNORE            true
+	#define DRHD0_DEVSCOPE0_TYPE    0x1U
+	#define DRHD0_DEVSCOPE0_ID      0x0U
+	#define DRHD0_DEVSCOPE0_BUS     0x0U
+	#define DRHD0_DEVSCOPE0_PATH    0x10U
+
+	#define DRHD1_DEV_CNT           0x2U
+	#define DRHD1_SEGMENT           0x0U
+	#define DRHD1_FLAGS             0x1U
+	#define DRHD1_REG_BASE          0xFED91000UL
+	#define DRHD1_IGNORE            false
+	#define DRHD1_DEVSCOPE0_TYPE    0x3U
+	#define DRHD1_DEVSCOPE0_ID      0x2U
+	#define DRHD1_DEVSCOPE0_BUS     0xf0U
+	#define DRHD1_DEVSCOPE0_PATH    0xf8U
+	#define DRHD1_DEVSCOPE1_TYPE    0x4U
+	#define DRHD1_DEVSCOPE1_ID      0x0U
+	#define DRHD1_DEVSCOPE1_BUS     0x0U
+	#define DRHD1_DEVSCOPE1_PATH    0xf8U
+
+	</DRHD_INFO>
+  <CPU_BRAND>
+	"Intel(R) Core(TM) i5-6600 CPU @ 3.30GHz"
+	</CPU_BRAND>
+  <CX_INFO>
+	{{SPACE_FFixedHW, 0x00U, 0x00U, 0x00U, 0x00UL}, 0x01U, 0x01U, 0x00U},	/* C1 */
+	{{SPACE_SYSTEM_IO, 0x08U, 0x00U, 0x00U, 0x1816UL}, 0x02U, 0x78U, 0x00U},	/* C2 */
+	{{SPACE_SYSTEM_IO, 0x08U, 0x00U, 0x00U, 0x1817UL}, 0x03U, 0x100U, 0x00U},	/* C3 */
+	</CX_INFO>
+  <PX_INFO>
+	{0xCE5UL, 0x00UL, 0x0AUL, 0x0AUL, 0x002700UL, 0x002700UL},	/* P0 */
+	{0xCE4UL, 0x00UL, 0x0AUL, 0x0AUL, 0x002100UL, 0x002100UL},	/* P1 */
+	{0xC1CUL, 0x00UL, 0x0AUL, 0x0AUL, 0x001F00UL, 0x001F00UL},	/* P2 */
+	{0xB54UL, 0x00UL, 0x0AUL, 0x0AUL, 0x001D00UL, 0x001D00UL},	/* P3 */
+	{0xAF0UL, 0x00UL, 0x0AUL, 0x0AUL, 0x001C00UL, 0x001C00UL},	/* P4 */
+	{0xA28UL, 0x00UL, 0x0AUL, 0x0AUL, 0x001A00UL, 0x001A00UL},	/* P5 */
+	{0x960UL, 0x00UL, 0x0AUL, 0x0AUL, 0x001800UL, 0x001800UL},	/* P6 */
+	{0x898UL, 0x00UL, 0x0AUL, 0x0AUL, 0x001600UL, 0x001600UL},	/* P7 */
+	{0x7D0UL, 0x00UL, 0x0AUL, 0x0AUL, 0x001400UL, 0x001400UL},	/* P8 */
+	{0x76CUL, 0x00UL, 0x0AUL, 0x0AUL, 0x001300UL, 0x001300UL},	/* P9 */
+	{0x6A4UL, 0x00UL, 0x0AUL, 0x0AUL, 0x001100UL, 0x001100UL},	/* P10 */
+	{0x5DCUL, 0x00UL, 0x0AUL, 0x0AUL, 0x000F00UL, 0x000F00UL},	/* P11 */
+	{0x514UL, 0x00UL, 0x0AUL, 0x0AUL, 0x000D00UL, 0x000D00UL},	/* P12 */
+	{0x4B0UL, 0x00UL, 0x0AUL, 0x0AUL, 0x000C00UL, 0x000C00UL},	/* P13 */
+	{0x3E8UL, 0x00UL, 0x0AUL, 0x0AUL, 0x000A00UL, 0x000A00UL},	/* P14 */
+	{0x320UL, 0x00UL, 0x0AUL, 0x0AUL, 0x000800UL, 0x000800UL},	/* P15 */
+	</PX_INFO>
+  <MMCFG_BASE_INFO>
+	/* PCI mmcfg base of MCFG */
+	#define DEFAULT_PCI_MMCFG_BASE   0xf8000000UL
+	</MMCFG_BASE_INFO>
+  <TPM_INFO>
+	/* no TPM device */
+	</TPM_INFO>
+  <CLOS_INFO>
+	</CLOS_INFO>
+  <IOMEM_INFO>
+	00000000-00000fff : Reserved
+	00001000-00057fff : System RAM
+	00058000-00058fff : Reserved
+	00059000-0009efff : System RAM
+	0009f000-000fffff : Reserved
+	  000a0000-000bffff : PCI Bus 0000:00
+	  000c0000-000cffff : Video ROM
+	  000f0000-000fffff : System ROM
+	00100000-96459017 : System RAM
+	96459018-96467057 : System RAM
+	96467058-96468017 : System RAM
+	96468018-96478057 : System RAM
+	96478058-98b34017 : System RAM
+	98b34018-98b53857 : System RAM
+	98b53858-a2366fff : System RAM
+	a2367000-a239bfff : ACPI Tables
+	a239c000-a40f3fff : System RAM
+	a40f4000-a40f4fff : ACPI Non-volatile Storage
+	a40f5000-a40f5fff : Reserved
+	a40f6000-acd10fff : System RAM
+	acd11000-acd11fff : Reserved
+	acd12000-ae016fff : System RAM
+	ae017000-ae05cfff : Reserved
+	ae05d000-b0de0fff : System RAM
+	b0de1000-b2510fff : Reserved
+	b2511000-b2522fff : ACPI Tables
+	b2523000-b26ddfff : System RAM
+	b26de000-b2d05fff : ACPI Non-volatile Storage
+	b2d06000-b32fefff : Reserved
+	b32ff000-b32fffff : System RAM
+	b3300000-b7ffffff : Reserved
+	  b4000000-b7ffffff : Graphics Stolen Memory
+	b8000000-f7ffffff : PCI Bus 0000:00
+	  f6000000-f70fffff : PCI Bus 0000:01
+	    f6000000-f6ffffff : 0000:01:00.0
+	    f7000000-f707ffff : 0000:01:00.0
+	    f7080000-f7083fff : 0000:01:00.1
+	      f7080000-f7083fff : ICH HD audio
+	  f7100000-f71fffff : PCI Bus 0000:03
+	    f7100000-f7103fff : 0000:03:00.0
+	      f7100000-f7103fff : nvme
+	  f7200000-f72fffff : PCI Bus 0000:02
+	    f7200000-f7203fff : 0000:02:00.0
+	      f7200000-f7203fff : r8169
+	    f7204000-f7204fff : 0000:02:00.0
+	      f7204000-f7204fff : r8169
+	  f7300000-f7303fff : 0000:00:1f.2
+	  f7304000-f7305fff : 0000:00:17.0
+	    f7304000-f7305fff : ahci
+	  f7306000-f73067ff : 0000:00:17.0
+	    f7306000-f73067ff : ahci
+	  f7307000-f73070ff : 0000:00:17.0
+	    f7307000-f73070ff : ahci
+	  f7fc0000-f7fdffff : pnp 00:05
+	f8000000-fbffffff : PCI MMCONFIG 0000 [bus 00-3f]
+	  f8000000-fbffffff : Reserved
+	    f8000000-fbffffff : pnp 00:05
+	fd000000-fe7fffff : PCI Bus 0000:00
+	  fd000000-fdabffff : pnp 00:06
+	  fdac0000-fdacffff : pnp 00:06
+	    fdac0000-fdacffff : pnp 00:08
+	  fdad0000-fdadffff : pnp 00:06
+	  fdae0000-fdaeffff : pnp 00:06
+	    fdae0000-fdaeffff : pnp 00:08
+	  fdaf0000-fdafffff : pnp 00:06
+	    fdaf0000-fdafffff : pnp 00:08
+	  fdb00000-fdffffff : pnp 00:06
+	  fe000000-fe010fff : Reserved
+	  fe036000-fe03bfff : pnp 00:06
+	  fe03d000-fe3fffff : pnp 00:06
+	  fe410000-fe7fffff : pnp 00:06
+	fec00000-fec00fff : Reserved
+	  fec00000-fec003ff : IOAPIC 0
+	fed00000-fed003ff : HPET 0
+	  fed00000-fed003ff : PNP0103:00
+	fed10000-fed17fff : pnp 00:05
+	fed18000-fed18fff : pnp 00:05
+	fed19000-fed19fff : pnp 00:05
+	fed20000-fed3ffff : pnp 00:05
+	fed45000-fed8ffff : pnp 00:05
+	fed90000-fed90fff : dmar0
+	fed91000-fed91fff : dmar1
+	fee00000-fee00fff : Local APIC
+	  fee00000-fee00fff : Reserved
+	ff000000-ffffffff : Reserved
+	  ff000000-ffffffff : INT0800:00
+	    ff000000-ffffffff : pnp 00:05
+	100000000-645ffffff : System RAM
+	  525600000-5262031d0 : Kernel code
+	  5262031d1-526c6ce3f : Kernel data
+	  526eef000-527197fff : Kernel bss
+	646000000-647ffffff : RAM buffer
+	2000000000-2fffffffff : PCI Bus 0000:00
+	  2fd0000000-2fdfffffff : 0000:00:02.0
+	  2fe0000000-2ff1ffffff : PCI Bus 0000:01
+	    2fe0000000-2fefffffff : 0000:01:00.0
+	    2ff0000000-2ff1ffffff : 0000:01:00.0
+	  2ffe000000-2ffeffffff : 0000:00:02.0
+	  2fff000000-2fff00ffff : 0000:00:1f.3
+	    2fff000000-2fff00ffff : ICH HD audio
+	  2fff010000-2fff01ffff : 0000:00:14.0
+	    2fff010000-2fff01ffff : xhci-hcd
+	  2fff020000-2fff023fff : 0000:00:1f.3
+	    2fff020000-2fff023fff : ICH HD audio
+	  2fff024000-2fff0240ff : 0000:00:1f.4
+	  2fff025000-2fff025fff : 0000:00:16.0
+	    2fff025000-2fff025fff : mei_me
+	</IOMEM_INFO>
+  <BLOCK_DEVICE_INFO>
+	/dev/nvme0n1p2: TYPE="ext4"
+	/dev/nvme0n1p5: TYPE="ext4"
+	/dev/nvme0n1p6: TYPE="ext4"
+	/dev/sda1: TYPE="ext4"
+	</BLOCK_DEVICE_INFO>
+  <TTYS_INFO>
+    seri:/dev/ttyS0 type:portio base:0x3F8 irq:4
+	</TTYS_INFO>
+  <AVAILABLE_IRQ_INFO>
+	3, 4, 5, 6, 7, 10, 11, 13, 14, 15
+	</AVAILABLE_IRQ_INFO>
+  <TOTAL_MEM_INFO>
+	24534584 kB
+	</TOTAL_MEM_INFO>
+  <CPU_PROCESSOR_INFO>
+	0, 1, 2, 3
+	</CPU_PROCESSOR_INFO>
+  <MAX_MSIX_TABLE_NUM>
+	32
+	</MAX_MSIX_TABLE_NUM>
+  <processors>
+    <model description="Intel(R) Core(TM) i5-6600 CPU @ 3.30GHz">
+      <family_id>0x6</family_id>
+      <model_id>0x5e</model_id>
+      <core_type></core_type>
+      <native_model_id></native_model_id>
+      <capability id="sse3"/>
+      <capability id="pclmulqdq"/>
+      <capability id="dtes64"/>
+      <capability id="monitor"/>
+      <capability id="ds_cpl"/>
+      <capability id="vmx"/>
+      <capability id="smx"/>
+      <capability id="est"/>
+      <capability id="tm2"/>
+      <capability id="ssse3"/>
+      <capability id="sdbg"/>
+      <capability id="fma"/>
+      <capability id="cmpxchg16b"/>
+      <capability id="xtpr"/>
+      <capability id="pdcm"/>
+      <capability id="pcid"/>
+      <capability id="sse4_1"/>
+      <capability id="sse4_2"/>
+      <capability id="x2apic"/>
+      <capability id="movbe"/>
+      <capability id="popcnt"/>
+      <capability id="tsc_deadline"/>
+      <capability id="aes"/>
+      <capability id="xsave"/>
+      <capability id="avx"/>
+      <capability id="f16c"/>
+      <capability id="rdrand"/>
+      <capability id="fpu"/>
+      <capability id="vme"/>
+      <capability id="de"/>
+      <capability id="pse"/>
+      <capability id="tsc"/>
+      <capability id="msr"/>
+      <capability id="pae"/>
+      <capability id="mce"/>
+      <capability id="cx8"/>
+      <capability id="apic"/>
+      <capability id="sep"/>
+      <capability id="mtrr"/>
+      <capability id="pge"/>
+      <capability id="mca"/>
+      <capability id="cmov"/>
+      <capability id="pat"/>
+      <capability id="pse36"/>
+      <capability id="clfsh"/>
+      <capability id="ds"/>
+      <capability id="acpi"/>
+      <capability id="mmx"/>
+      <capability id="fxsr"/>
+      <capability id="sse"/>
+      <capability id="sse2"/>
+      <capability id="ss"/>
+      <capability id="htt"/>
+      <capability id="tm"/>
+      <capability id="pbe"/>
+      <capability id="fsgsbase"/>
+      <capability id="ia32_tsc_adjust_msr"/>
+      <capability id="sgx"/>
+      <capability id="bmi1"/>
+      <capability id="hle"/>
+      <capability id="avx2"/>
+      <capability id="smep"/>
+      <capability id="bmi2"/>
+      <capability id="erms"/>
+      <capability id="invpcid"/>
+      <capability id="rtm"/>
+      <capability id="deprecate_fpu"/>
+      <capability id="mpx"/>
+      <capability id="rdseed"/>
+      <capability id="adx"/>
+      <capability id="smap"/>
+      <capability id="clflushopt"/>
+      <capability id="intel_pt"/>
+      <capability id="md_clear"/>
+      <capability id="ibrs_ibpb"/>
+      <capability id="stibp"/>
+      <capability id="l1d_flush"/>
+      <capability id="ssbd"/>
+      <capability id="lahf_sahf_64"/>
+      <capability id="lzcnt"/>
+      <capability id="prefetchw"/>
+      <capability id="syscall_sysret_64"/>
+      <capability id="execute_disable"/>
+      <capability id="gbyte_pages"/>
+      <capability id="rdtscp_ia32_tsc_aux"/>
+      <capability id="intel_64"/>
+      <capability id="invariant_tsc"/>
+    </model>
+    <die id="0">
+      <core id="0x0">
+        <thread id="0x0">
+          <cpu_id>0</cpu_id>
+          <apic_id>0x0</apic_id>
+          <x2apic_id>0x0</x2apic_id>
+          <family_id>0x6</family_id>
+          <model_id>0x5e</model_id>
+          <stepping_id>0x3</stepping_id>
+          <core_type></core_type>
+          <native_model_id></native_model_id>
+        </thread>
+      </core>
+      <core id="0x1">
+        <thread id="0x2">
+          <cpu_id>1</cpu_id>
+          <apic_id>0x2</apic_id>
+          <x2apic_id>0x2</x2apic_id>
+          <family_id>0x6</family_id>
+          <model_id>0x5e</model_id>
+          <stepping_id>0x3</stepping_id>
+          <core_type></core_type>
+          <native_model_id></native_model_id>
+        </thread>
+      </core>
+      <core id="0x2">
+        <thread id="0x4">
+          <cpu_id>2</cpu_id>
+          <apic_id>0x4</apic_id>
+          <x2apic_id>0x4</x2apic_id>
+          <family_id>0x6</family_id>
+          <model_id>0x5e</model_id>
+          <stepping_id>0x3</stepping_id>
+          <core_type></core_type>
+          <native_model_id></native_model_id>
+        </thread>
+      </core>
+      <core id="0x3">
+        <thread id="0x6">
+          <cpu_id>3</cpu_id>
+          <apic_id>0x6</apic_id>
+          <x2apic_id>0x6</x2apic_id>
+          <family_id>0x6</family_id>
+          <model_id>0x5e</model_id>
+          <stepping_id>0x3</stepping_id>
+          <core_type></core_type>
+          <native_model_id></native_model_id>
+        </thread>
+      </core>
+    </die>
+  </processors>
+  <caches>
+    <cache level="1" id="0x0" type="1">
+      <cache_size>32768</cache_size>
+      <line_size>64</line_size>
+      <ways>8</ways>
+      <sets>64</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x0</processor>
+      </processors>
+    </cache>
+    <cache level="1" id="0x0" type="2">
+      <cache_size>32768</cache_size>
+      <line_size>64</line_size>
+      <ways>8</ways>
+      <sets>64</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x0</processor>
+      </processors>
+    </cache>
+    <cache level="1" id="0x1" type="1">
+      <cache_size>32768</cache_size>
+      <line_size>64</line_size>
+      <ways>8</ways>
+      <sets>64</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x2</processor>
+      </processors>
+    </cache>
+    <cache level="1" id="0x1" type="2">
+      <cache_size>32768</cache_size>
+      <line_size>64</line_size>
+      <ways>8</ways>
+      <sets>64</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x2</processor>
+      </processors>
+    </cache>
+    <cache level="1" id="0x2" type="1">
+      <cache_size>32768</cache_size>
+      <line_size>64</line_size>
+      <ways>8</ways>
+      <sets>64</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x4</processor>
+      </processors>
+    </cache>
+    <cache level="1" id="0x2" type="2">
+      <cache_size>32768</cache_size>
+      <line_size>64</line_size>
+      <ways>8</ways>
+      <sets>64</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x4</processor>
+      </processors>
+    </cache>
+    <cache level="1" id="0x3" type="1">
+      <cache_size>32768</cache_size>
+      <line_size>64</line_size>
+      <ways>8</ways>
+      <sets>64</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x6</processor>
+      </processors>
+    </cache>
+    <cache level="1" id="0x3" type="2">
+      <cache_size>32768</cache_size>
+      <line_size>64</line_size>
+      <ways>8</ways>
+      <sets>64</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x6</processor>
+      </processors>
+    </cache>
+    <cache level="2" id="0x0" type="3">
+      <cache_size>262144</cache_size>
+      <line_size>64</line_size>
+      <ways>4</ways>
+      <sets>1024</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x0</processor>
+      </processors>
+    </cache>
+    <cache level="2" id="0x1" type="3">
+      <cache_size>262144</cache_size>
+      <line_size>64</line_size>
+      <ways>4</ways>
+      <sets>1024</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x2</processor>
+      </processors>
+    </cache>
+    <cache level="2" id="0x2" type="3">
+      <cache_size>262144</cache_size>
+      <line_size>64</line_size>
+      <ways>4</ways>
+      <sets>1024</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x4</processor>
+      </processors>
+    </cache>
+    <cache level="2" id="0x3" type="3">
+      <cache_size>262144</cache_size>
+      <line_size>64</line_size>
+      <ways>4</ways>
+      <sets>1024</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>0</cache_inclusiveness>
+      <complex_cache_indexing>0</complex_cache_indexing>
+      <processors>
+        <processor>0x6</processor>
+      </processors>
+    </cache>
+    <cache level="3" id="0x0" type="3">
+      <cache_size>6291456</cache_size>
+      <line_size>64</line_size>
+      <ways>12</ways>
+      <sets>8192</sets>
+      <partitions>1</partitions>
+      <self_initializing>1</self_initializing>
+      <fully_associative>0</fully_associative>
+      <write_back_invalidate>0</write_back_invalidate>
+      <cache_inclusiveness>1</cache_inclusiveness>
+      <complex_cache_indexing>1</complex_cache_indexing>
+      <processors>
+        <processor>0x0</processor>
+        <processor>0x2</processor>
+        <processor>0x4</processor>
+        <processor>0x6</processor>
+      </processors>
+    </cache>
+  </caches>
+  <memory>
+    <range start="0x0000000000000000" end="0x0000000000057fff" size="360448"/>
+    <range start="0x0000000000059000" end="0x000000000009efff" size="286720"/>
+    <range start="0x0000000000100000" end="0x00000000a2366fff" size="2720428032"/>
+    <range start="0x00000000a239c000" end="0x00000000a40f3fff" size="30769152"/>
+    <range start="0x00000000a40f6000" end="0x00000000b0de0fff" size="214872064"/>
+    <range start="0x00000000b2523000" end="0x00000000b26ddfff" size="1814528"/>
+    <range start="0x00000000b32ff000" end="0x00000000b32fffff" size="4096"/>
+    <range start="0x0000000100000000" end="0x0000000645ffffff" size="22649241600"/>
+  </memory>
+  <devices>
+    <bus type="pci" address="0x0" id="0x191f" description="Host bridge: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Host Bridge/DRAM Registers">
+      <vendor>0x8086</vendor>
+      <identifier>0x191f</identifier>
+      <subsystem_vendor>0x1043</subsystem_vendor>
+      <subsystem_identifier>0x8694</subsystem_identifier>
+      <class>0x060000</class>
+      <resource type="memory" min="0xa0000" max="0xbffff" len="0x20000"/>
+      <resource type="memory" min="0xb8000000" max="0xf7ffffff" len="0x40000000"/>
+      <resource type="memory" min="0xfd000000" max="0xfe7fffff" len="0x1800000"/>
+      <resource type="memory" min="0x2000000000" max="0x2fffffffff" len="0x1000000000"/>
+      <capability id="Vendor-Specific"/>
+      <device address="0x10000" id="0x1901" description="PCI bridge: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16)">
+        <vendor>0x8086</vendor>
+        <identifier>0x1901</identifier>
+        <class>0x060400</class>
+        <resource type="io_port" min="0xe000" max="0xefff" len="0x1000"/>
+        <resource type="memory" min="0xf6000000" max="0xf70fffff" len="0x1100000"/>
+        <capability id="Subsystem ID and Subsystem Vendor ID"/>
+        <capability id="Power Management"/>
+        <capability id="MSI"/>
+        <capability id="PCI Express"/>
+        <capability id="Virtual Channel"/>
+        <capability id="Root Complex Link Declaration"/>
+        <capability id="Secondary PCI Express"/>
+        <bus type="pci" address="0x1">
+          <device address="0x0" id="0x1c81" description="VGA compatible controller: NVIDIA Corporation GP107 [GeForce GTX 1050]">
+            <vendor>0x10de</vendor>
+            <identifier>0x1c81</identifier>
+            <subsystem_vendor>0x1043</subsystem_vendor>
+            <subsystem_identifier>0x85ce</subsystem_identifier>
+            <class>0x030000</class>
+            <resource type="io_port" min="0xe000" max="0xe07f" len="0x80" id="bar5"/>
+            <resource type="memory" min="0xf6000000" max="0xf6ffffff" len="0x1000000" id="bar0" width="32" prefetchable="0"/>
+            <resource type="memory" min="0x2fe0000000" max="0x2fefffffff" len="0x10000000" id="bar1" width="64" prefetchable="1"/>
+            <resource type="memory" min="0x2ff0000000" max="0x2ff1ffffff" len="0x2000000" id="bar3" width="64" prefetchable="1"/>
+            <capability id="Power Management"/>
+            <capability id="MSI">
+              <capability id="64-bit address"/>
+            </capability>
+            <capability id="PCI Express"/>
+            <capability id="Virtual Channel"/>
+            <capability id="LTR"/>
+            <capability id="Power Budgeting"/>
+            <capability id="Advanced Error Reporting"/>
+            <capability id="Vendor-Specific Extended"/>
+            <capability id="Secondary PCI Express"/>
+          </device>
+          <device address="0x1" id="0x0fb9" description="Audio device: NVIDIA Corporation GP107GL High Definition Audio Controller">
+            <vendor>0x10de</vendor>
+            <identifier>0x0fb9</identifier>
+            <subsystem_vendor>0x1043</subsystem_vendor>
+            <subsystem_identifier>0x85ce</subsystem_identifier>
+            <class>0x040300</class>
+            <resource type="memory" min="0xf7080000" max="0xf7083fff" len="0x4000" id="bar0" width="32" prefetchable="0"/>
+            <capability id="Power Management"/>
+            <capability id="MSI">
+              <capability id="64-bit address"/>
+            </capability>
+            <capability id="PCI Express"/>
+            <capability id="Advanced Error Reporting"/>
+          </device>
+        </bus>
+      </device>
+      <device address="0x20000" id="0x1912" description="VGA compatible controller: Intel Corporation HD Graphics 530">
+        <vendor>0x8086</vendor>
+        <identifier>0x1912</identifier>
+        <subsystem_vendor>0x1043</subsystem_vendor>
+        <subsystem_identifier>0x8694</subsystem_identifier>
+        <class>0x030000</class>
+        <resource type="io_port" min="0xf000" max="0xf03f" len="0x40" id="bar4"/>
+        <resource type="memory" min="0x2fd0000000" max="0x2fdfffffff" len="0x10000000" id="bar2" width="64" prefetchable="1"/>
+        <resource type="memory" min="0x2ffe000000" max="0x2ffeffffff" len="0x1000000" id="bar0" width="64" prefetchable="0"/>
+        <capability id="Vendor-Specific"/>
+        <capability id="PCI Express"/>
+        <capability id="MSI"/>
+        <capability id="Power Management"/>
+        <capability id="PASID"/>
+        <capability id="ATS"/>
+        <capability id="PRI"/>
+      </device>
+      <device address="0x140000" id="0xa12f" description="USB controller: Intel Corporation 100 Series/C230 Series Chipset Family USB 3.0 xHCI Controller">
+        <vendor>0x8086</vendor>
+        <identifier>0xa12f</identifier>
+        <subsystem_vendor>0x1043</subsystem_vendor>
+        <subsystem_identifier>0x8694</subsystem_identifier>
+        <class>0x0c0330</class>
+        <resource type="memory" min="0x2fff010000" max="0x2fff01ffff" len="0x10000" id="bar0" width="64" prefetchable="0"/>
+        <capability id="Power Management"/>
+        <capability id="MSI">
+          <capability id="multiple-message">
+            <count>8</count>
+          </capability>
+          <capability id="64-bit address"/>
+        </capability>
+      </device>
+      <device address="0x160000" id="0xa13a" description="Communication controller: Intel Corporation 100 Series/C230 Series Chipset Family MEI Controller #1">
+        <vendor>0x8086</vendor>
+        <identifier>0xa13a</identifier>
+        <subsystem_vendor>0x1043</subsystem_vendor>
+        <subsystem_identifier>0x8694</subsystem_identifier>
+        <class>0x078000</class>
+        <resource type="memory" min="0x2fff025000" max="0x2fff025fff" len="0x1000" id="bar0" width="64" prefetchable="0"/>
+        <capability id="Power Management"/>
+        <capability id="MSI">
+          <capability id="64-bit address"/>
+        </capability>
+      </device>
+      <device address="0x170000" id="0xa102" description="SATA controller: Intel Corporation Q170/Q150/B150/H170/H110/Z170/CM236 Chipset SATA Controller [AHCI Mode]">
+        <vendor>0x8086</vendor>
+        <identifier>0xa102</identifier>
+        <subsystem_vendor>0x1043</subsystem_vendor>
+        <subsystem_identifier>0x8694</subsystem_identifier>
+        <class>0x010601</class>
+        <resource type="io_port" min="0xf060" max="0xf07f" len="0x20" id="bar4"/>
+        <resource type="io_port" min="0xf080" max="0xf083" len="0x4" id="bar3"/>
+        <resource type="io_port" min="0xf090" max="0xf097" len="0x8" id="bar2"/>
+        <resource type="memory" min="0xf7304000" max="0xf7305fff" len="0x2000" id="bar0" width="32" prefetchable="0"/>
+        <resource type="memory" min="0xf7306000" max="0xf73067ff" len="0x800" id="bar5" width="32" prefetchable="0"/>
+        <resource type="memory" min="0xf7307000" max="0xf73070ff" len="0x100" id="bar1" width="32" prefetchable="0"/>
+        <capability id="MSI"/>
+        <capability id="Power Management"/>
+        <capability id="Reserved (0x12)"/>
+      </device>
+      <device address="0x1c0000" id="0xa114" description="PCI bridge: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #5">
+        <vendor>0x8086</vendor>
+        <identifier>0xa114</identifier>
+        <class>0x060400</class>
+        <resource type="io_port" min="0xd000" max="0xdfff" len="0x1000"/>
+        <resource type="memory" min="0xf7200000" max="0xf72fffff" len="0x100000"/>
+        <capability id="PCI Express"/>
+        <capability id="MSI"/>
+        <capability id="Subsystem ID and Subsystem Vendor ID"/>
+        <capability id="Power Management"/>
+        <capability id="Advanced Error Reporting"/>
+        <capability id="ACS"/>
+        <capability id="Secondary PCI Express"/>
+        <bus type="pci" address="0x2">
+          <device address="0x0" id="0x8168" description="Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller">
+            <vendor>0x10ec</vendor>
+            <identifier>0x8168</identifier>
+            <subsystem_vendor>0x1043</subsystem_vendor>
+            <subsystem_identifier>0x8677</subsystem_identifier>
+            <class>0x020000</class>
+            <resource type="io_port" min="0xd000" max="0xd0ff" len="0x100" id="bar0"/>
+            <resource type="memory" min="0xf7200000" max="0xf7203fff" len="0x4000" id="bar4" width="64" prefetchable="0"/>
+            <resource type="memory" min="0xf7204000" max="0xf7204fff" len="0x1000" id="bar2" width="64" prefetchable="0"/>
+            <capability id="Power Management"/>
+            <capability id="MSI">
+              <capability id="64-bit address"/>
+            </capability>
+            <capability id="PCI Express"/>
+            <capability id="MSI-X"/>
+            <capability id="Advanced Error Reporting"/>
+            <capability id="Virtual Channel"/>
+            <capability id="Device Serial Number"/>
+            <capability id="LTR"/>
+            <capability id="L1 PM Substates"/>
+          </device>
+        </bus>
+      </device>
+      <device address="0x1d0000" id="0xa118" description="PCI bridge: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #9">
+        <vendor>0x8086</vendor>
+        <identifier>0xa118</identifier>
+        <class>0x060400</class>
+        <resource type="memory" min="0xf7100000" max="0xf71fffff" len="0x100000"/>
+        <capability id="PCI Express"/>
+        <capability id="MSI"/>
+        <capability id="Subsystem ID and Subsystem Vendor ID"/>
+        <capability id="Power Management"/>
+        <capability id="Advanced Error Reporting"/>
+        <capability id="ACS"/>
+        <capability id="Secondary PCI Express"/>
+        <bus type="pci" address="0x3">
+          <device address="0x0" id="0x1327" description="Non-Volatile memory controller: SK hynix">
+            <vendor>0x1c5c</vendor>
+            <identifier>0x1327</identifier>
+            <subsystem_vendor>0x1c5c</subsystem_vendor>
+            <subsystem_identifier>0x0000</subsystem_identifier>
+            <class>0x010802</class>
+            <resource type="memory" min="0xf7100000" max="0xf7103fff" len="0x4000" id="bar0" width="64" prefetchable="0"/>
+            <capability id="Power Management"/>
+            <capability id="MSI">
+              <capability id="multiple-message">
+                <count>32</count>
+              </capability>
+              <capability id="64-bit address"/>
+              <capability id="per-vector masking"/>
+            </capability>
+            <capability id="MSI-X"/>
+            <capability id="PCI Express"/>
+            <capability id="Advanced Error Reporting"/>
+            <capability id="Device Serial Number"/>
+            <capability id="Power Budgeting"/>
+            <capability id="LTR"/>
+            <capability id="Secondary PCI Express"/>
+            <capability id="Vendor-Specific Extended"/>
+            <capability id="L1 PM Substates"/>
+          </device>
+        </bus>
+      </device>
+      <device address="0x1f0000" id="0xa148" description="ISA bridge: Intel Corporation B150 Chipset LPC/eSPI Controller">
+        <vendor>0x8086</vendor>
+        <identifier>0xa148</identifier>
+        <subsystem_vendor>0x1043</subsystem_vendor>
+        <subsystem_identifier>0x8694</subsystem_identifier>
+        <class>0x060100</class>
+      </device>
+      <device address="0x1f0002" id="0xa121" description="Memory controller: Intel Corporation 100 Series/C230 Series Chipset Family Power Management Controller">
+        <vendor>0x8086</vendor>
+        <identifier>0xa121</identifier>
+        <subsystem_vendor>0x1043</subsystem_vendor>
+        <subsystem_identifier>0x8694</subsystem_identifier>
+        <class>0x058000</class>
+        <resource type="memory" min="0xf7300000" max="0xf7303fff" len="0x4000" id="bar0" width="32" prefetchable="0"/>
+      </device>
+      <device address="0x1f0003" id="0xa170" description="Audio device: Intel Corporation 100 Series/C230 Series Chipset Family HD Audio Controller">
+        <vendor>0x8086</vendor>
+        <identifier>0xa170</identifier>
+        <subsystem_vendor>0x1043</subsystem_vendor>
+        <subsystem_identifier>0x86c7</subsystem_identifier>
+        <class>0x040300</class>
+        <resource type="memory" min="0x2fff000000" max="0x2fff00ffff" len="0x10000" id="bar4" width="64" prefetchable="0"/>
+        <resource type="memory" min="0x2fff020000" max="0x2fff023fff" len="0x4000" id="bar0" width="64" prefetchable="0"/>
+        <capability id="Power Management"/>
+        <capability id="MSI">
+          <capability id="64-bit address"/>
+        </capability>
+      </device>
+      <device address="0x1f0004" id="0xa123" description="SMBus: Intel Corporation 100 Series/C230 Series Chipset Family SMBus">
+        <vendor>0x8086</vendor>
+        <identifier>0xa123</identifier>
+        <subsystem_vendor>0x1043</subsystem_vendor>
+        <subsystem_identifier>0x8694</subsystem_identifier>
+        <class>0x0c0500</class>
+        <resource type="io_port" min="0xf040" max="0xf05f" len="0x20" id="bar4"/>
+        <resource type="memory" min="0x2fff024000" max="0x2fff0240ff" len="0x100" id="bar0" width="64" prefetchable="0"/>
+      </device>
+    </bus>
+  </devices>
+</acrn-config>
