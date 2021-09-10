@@ -14,6 +14,7 @@ KVM boot args:
 ```
 set VMHOST_UUID=ad9ba2e5-bc77-4517-94ef-c41ca37f33f1
 set EXTRA_OPTIONS='intel_pstate=disable kvm_intel.nested=n nvidia-drm.modeset=1'
+set VM_OPTIONS='intel_iommu=on iommu=pt default_hugepagesz=1G hugepagesz=1G hugepages=20 video=efifb:off'
 set VFIO='vfio-pci.ids=10de:1c81,10de:0fb9,8086:a12f'
 search --no-floppy --set=root -u $VMHOST_UUID
 linuxefi  /boot/vmlinuz root=UUID=$VMHOST_UUID $EXTRA_OPTIONS $VM_OPTIONS $VFIO
